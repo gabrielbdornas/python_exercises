@@ -9,8 +9,5 @@ def solution(l, t):
       for end in range(1, len(l)):
         sub_list = l[start:end + 1]
         if sum(sub_list) == t:
-          sub_lists.append(sub_list)
-    if len(sub_lists) > 0:
-      return sub_lists[0]
-    else:
-      return [-1,-1]
+          return sub_list
+    return [-1,-1]
